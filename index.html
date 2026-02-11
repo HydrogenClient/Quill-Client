@@ -11,57 +11,53 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         html { scroll-behavior: smooth; }
-        body { background-color: #0c0c0c; color: #ffffff; font-family: 'Inter', 'Segoe UI', sans-serif; }
+        body { background-color: #0c0c0c; color: #ffffff; font-family: 'Inter', sans-serif; }
         .accent-blue { color: #0078D7; }
         .bg-accent { background-color: #0078D7; }
         .hero-gradient {
             background: radial-gradient(circle at top right, #1a2a44 0%, #0c0c0c 50%);
         }
-        .btn-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-hover { transition: all 0.3s ease; }
         .btn-hover:hover { 
             transform: translateY(-4px); 
-            box-shadow: 0 10px 25px -5px rgba(0, 120, 215, 0.5); 
+            box-shadow: 0 10px 25px -5px rgba(0, 120, 215, 0.4); 
         }
-        .card { background: #161616; border: 1px solid #262626; }
     </style>
 </head>
 <body>
 
-    <nav class="flex justify-between items-center p-8 max-w-7xl mx-auto border-b border-white/5">
-        <div class="text-2xl font-black flex items-center gap-3 tracking-tighter uppercase">
-            <img src="Quill_Logo.png" alt="Quill Logo" class="w-10 h-10 object-contain">
-            QUILL CLIENT
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="flex items-center gap-4">
+            <img src="Quill_Logo.png" alt="Quill Logo" class="h-12 w-auto object-contain">
+            <span class="text-xl font-black tracking-tighter uppercase">Quill Client</span>
         </div>
-        <div class="space-x-8 hidden md:flex font-medium text-sm uppercase tracking-widest text-gray-400">
-            <a href="#features" class="hover:text-white transition">Features</a>
-            <a href="https://github.com/HydrogenClient/Quill-Client" target="_blank" class="hover:text-white transition">GitHub</a>
-            <a href="#download" class="bg-white text-black px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition">Get Started</a>
+        <div class="space-x-8 hidden md:flex font-bold text-xs uppercase tracking-widest text-gray-400">
+            <a href="https://github.com/HydrogenClient/Quill-Client" target="_blank" class="hover:text-white transition">Source Code</a>
+            <a href="#download" class="bg-white text-black px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white transition">Download</a>
         </div>
     </nav>
 
-    <section class="hero-gradient py-32 px-6 text-center">
-        <img src="Quill_Logo.png" alt="Quill Logo" class="w-32 h-32 mx-auto mb-8 drop-shadow-[0_0_15px_rgba(0,120,215,0.5)]">
+    <section class="hero-gradient py-24 px-6 text-center">
+        <img src="Quill_Logo.png" alt="Quill Logo" class="h-[250px] w-auto mx-auto mb-10 drop-shadow-[0_0_20px_rgba(0,120,215,0.3)]">
         
-        <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-blue-500/10 border border-blue-500/20 text-blue-400 rounded-full">
-            Version 1.0.0 Now Live
-        </div>
-        <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tight">
-            Play Minecraft <br><span class="accent-blue">Better.</span>
+        <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tighter">
+            Play Minecraft <br><span class="accent-blue">Redefined.</span>
         </h1>
-        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed">
-            A minimalist, open-source launcher designed for power users. Seamless Modrinth integration, rapid launching, and zero bloat.
+        <p class="text-gray-400 text-lg max-w-2xl mx-auto mb-12">
+            The ultimate lightweight launcher for Forge and Fabric. Built for speed, designed for simplicity.
         </p>
         
-        <div id="download" class="flex flex-col items-center">
+        <div id="download">
             <a href="https://github.com/HydrogenClient/Quill-Client/releases/download/v1.0.0/Quill.Client.exe" 
-               class="bg-accent px-12 py-5 rounded-xl font-bold text-xl btn-hover inline-block shadow-2xl">
-                <i class="fas fa-download mr-3"></i> Download for Windows
+               class="bg-accent px-12 py-5 rounded-2xl font-bold text-xl btn-hover inline-block">
+                <i class="fas fa-download mr-3"></i> Get Quill Client
             </a>
-            <p class="text-gray-500 text-sm mt-6 flex items-center gap-2">
-                <i class="fab fa-windows"></i> Optimized for Windows 10 & 11
-            </p>
         </div>
     </section>
 
-    </body>
+    <footer class="py-20 text-center border-t border-white/5">
+        <p class="text-gray-600 text-sm">© 2026 Quill Client. Not affiliated with Mojang AB.</p>
+    </footer>
+
+</body>
 </html>
