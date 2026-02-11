@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quill Client | Modern Minecraft Launcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #121212; color: #ffffff; font-family: 'Segoe UI', sans-serif; }
+        .accent-blue { color: #0078D7; }
+        .bg-accent { background-color: #0078D7; }
+        .hero-gradient {
+            background: radial-gradient(circle at center, #1c1c1c 0%, #121212 100%);
+        }
+        .btn-hover:hover { transform: translateY(-2px); transition: all 0.2s; }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center p-6 max-w-6xl mx-auto">
+        <div class="text-2xl font-bold flex items-center gap-2">
+            <i class="fas fa-pen-nib accent-blue"></i> Quill Client
+        </div>
+        <div class="space-x-8 hidden md:flex">
+            <a href="#features" class="hover:text-blue-400">Features</a>
+            <a href="#download" class="hover:text-blue-400">Download</a>
+            <a href="https://github.com/HydrogenClient/Quill-Client" class="hover:text-blue-400">Source</a>
+        </div>
+    </nav>
+
+    <section class="hero-gradient py-20 px-6 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Elevate your <span class="accent-blue">Minecraft</span> experience.</h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-10">
+            A lightweight, high-performance launcher with built-in Modrinth support, instance isolation, and a sleek modern interface.
+        </p>
+        <div id="download">
+            <a href="YOUR_DIRECT_EXE_URL_HERE" class="bg-accent px-10 py-4 rounded-full font-bold text-xl btn-hover inline-block shadow-lg shadow-blue-500/20">
+                <i class="fas fa-download mr-2"></i> Download for Windows
+            </a>
+            <p class="text-xs text-gray-500 mt-4">Supports Windows 10/11 | .NET 8.0</p>
+        </div>
+    </section>
+
+    <section id="features" class="max-w-6xl mx-auto py-20 px-6 grid md:grid-cols-3 gap-10">
+        <div class="bg-[#1c1c1c] p-8 rounded-2xl border border-gray-800">
+            <i class="fas fa-bolt text-3xl accent-blue mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Lightning Fast</h3>
+            <p class="text-gray-400">Built on .NET for minimal resource usage. Get into the game faster than ever.</p>
+        </div>
+        <div class="bg-[#1c1c1c] p-8 rounded-2xl border border-gray-800">
+            <i class="fas fa-box-open text-3xl accent-blue mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Modrinth Browser</h3>
+            <p class="text-gray-400">Search and install thousands of mods directly inside the launcher without opening a browser.</p>
+        </div>
+        <div class="bg-[#1c1c1c] p-8 rounded-2xl border border-gray-800">
+            <i class="fas fa-shield-halved text-3xl accent-blue mb-4"></i>
+            <h3 class="text-xl font-bold mb-2">Safe & Secure</h3>
+            <p class="text-gray-400">Official Microsoft OAuth login. We never see your password. Fully open source.</p>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 py-10 text-center text-gray-500 text-sm">
+        <p>© 2026 Quill Client. Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft.</p>
+    </footer>
+
+</body>
+</html>
